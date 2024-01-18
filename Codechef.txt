@@ -1,0 +1,33 @@
+https://www.codechef.com/problems/CHEFAPPS
+
+Chef and his Apps ; Difficulty Rating:702
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+        Scanner input=new Scanner(System.in);
+        int t=input.nextInt();
+        while(t-->0){
+            int s=input.nextInt();
+            int x=input.nextInt();
+            int y=input.nextInt();
+            int z=input.nextInt();
+            
+            int d=x+y+z;
+            if(d<=s){
+                System.out.println(0);
+            }else if(d-x<=s || d-y<=s){
+                System.out.println(1);
+            }else{
+                System.out.println(2);
+            }
+        }
+	}
+}
